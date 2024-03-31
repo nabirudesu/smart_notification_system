@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "6ec4a1b3-314a-4494-b1a7-af394d8ea52c",
+		"name": "smart_notification_system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13586834"
+	},
+	"item": [
+		{
+			"name": "activity_notification",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "activity",
+							"value": "Here are some user details for context: Name: Nabil Tiaiba,    Email: nabilnaba99@gmail.com,   languange: English,   age: 24,  Phone Number: 0542182617,   Location: Algiers,    Interests: [basket ball,swimming,machine learning,tech events,job offers],    Recommanded activities: [Emploie Connect Event,basket ball tournament]",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/activity_notification/{activity}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"activity_notification",
+						"{activity}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
