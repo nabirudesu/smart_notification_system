@@ -14,7 +14,7 @@ def generate_notification_message(query,user_data):
       messages=[
           {"role": "system", "content": bot_context},
           {"role": "user", "content": applicaiton_context},
-          {"role": "user", "content": user_data},
+          {"role": "user", "content": str(user_data)},
           {"role": "user", "content": query}
       ],
       max_tokens=40,
